@@ -1,11 +1,11 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import ChatForm from "@/app/components/chat/ChatForm";
+import ChatMessage from "@/app/components/chat/ChatMessage";
 
 export default function Home() {
   return (
     <div>
-      <h1>こんにちは！！！</h1>
-      <Image src="/images/test.svg" alt="" width={72} height={16} />
+      <ChatMessage />
+      <ChatForm />
     </div>
   );
 }
